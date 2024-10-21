@@ -16,6 +16,7 @@ spec:
       containers:
         - image: busybox
           name: guestbook-ui
+          command: ["tail", "-f", "/dev/null"]
           resources:
             limits:
               memory: "128Mi"
